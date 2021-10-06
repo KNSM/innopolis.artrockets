@@ -1,0 +1,233 @@
+.list {
+
+  &.list-lang {
+    display: flex;
+
+    .list__item {
+      &:after {
+        content: '|';
+        margin: 0 5px;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      &-link {
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+
+      @media (max-width: $bpLaptop) {
+        .list__item {
+
+          &:before {
+            font-size: 14px;
+          }
+
+          &-link {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  &.list-media {
+    display: flex;
+    align-items: center;
+    margin: 0 -27px;
+
+    .list__item {
+      margin: 0 27px;
+
+      &-link {
+        &:hover {
+          .icon {
+            color: $primaryColor;
+          }
+        }
+      }
+
+      .icon {
+        font-size: 18px;
+        transition: .2s;
+      }
+    }
+
+    @media (max-width: $bpTablet) {
+      margin: 0 -20px;
+
+      .list__item {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  &.list-tags-white {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px -10px;
+
+    @media (max-width: $bpPhone) {
+      margin: 0 -8px -10px;
+    }
+
+    .list__item {
+      margin: 0 10px 10px;
+      flex: 0 0 auto;
+      background: rgba(20, 73, 85, 0.14);
+      border: 1px solid #FFFFFF;
+      height: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 22px;
+
+      .text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #fff;
+      }
+
+      @media (max-width: $bpPhone) {
+        height: 24px;
+        padding: 5px 16px;
+        margin: 0 8px 10px;
+
+        .text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  &.list-big-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -28px -32px;
+
+    @media (max-width: $bpDesktop) {
+      margin: 0 -17px -24px;
+    }
+
+    .list__item {
+      padding: 0 28px;
+      margin-bottom: 32px;
+      flex: 0 0 auto;
+      position: relative;
+
+      .sup-text {
+        position: absolute;
+        min-width: 120px;
+        z-index: 1;
+        padding: 9px;
+        background: #fff;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, calc(100% + 12px));
+        text-align: center;
+        transition: .2s;
+        opacity: 0;
+        visibility: hidden;
+
+        .text {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1.6;
+        }
+      }
+
+      &-link {
+        display: flex;
+        width: 103px;
+        height: 103px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $darkColor;
+
+        .icon {
+          font-size: 52px;
+          color: #fff;
+        }
+      }
+
+      &.-active {
+        .list__item-link {
+          color: #fff;
+          background: $primaryColor;
+        }
+      }
+
+      &:hover {
+        .sup-text {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(-50%, calc(100% + 18px));
+        }
+      }
+
+      @media (max-width: $bpDesktop) {
+        padding: 0 17px;
+        margin-bottom: 24px;
+
+        &-link {
+          width: 76px;
+          height: 76px;
+
+          .icon {
+            font-size: 40px;
+          }
+        }
+      }
+
+      @media (max-width: $bpTablet) {
+        &-link {
+          width: 45px;
+          height: 45px;
+
+          .icon {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  &.list-dotted {
+    .list__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: '•';
+        width: 4px;
+        flex: 0 0 auto;
+        background: $darkColor;
+        margin-right: 14px;
+        font-size: 4px;
+      }
+
+      .text {
+        font-weight: 500;
+      }
+    }
+  }
+}

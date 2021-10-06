@@ -1,0 +1,146 @@
+.aside {
+  padding-right: 20px;
+  border-right: 1px solid #000000;
+
+  .aside__nav {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .list {
+      .list__item {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &-link {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.2;
+
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+
+        &.-active {
+
+          .list__item-link {
+            font-weight: 700;
+            color: $primaryColor;
+          }
+        }
+
+        .sublist {
+          padding: 37px 0 0 17px;
+
+          .sublist__item {
+            margin-bottom: 18px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            &-link {
+              font-size: 15px;
+              line-height: 1.2;
+              font-weight: 500;
+
+              &:hover {
+                color: $primaryColor;
+              }
+            }
+
+            &.-active {
+
+              .sublist__item-link {
+                color: $primaryColor;
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: $bpTablet) {
+        .list__item {
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &-link {
+            font-size: 14px;
+          }
+
+          .sublist {
+            padding: 20px 0 0 10px;
+
+            .sublist__item {
+              margin-bottom: 15px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              &-link {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aside__filter {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-wrapper {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 -7px -14px;
+
+      .input__field {
+        margin: 0 7px 14px;
+        flex: 0 0 auto;
+
+        .input {
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          z-index: -999;
+
+          &:checked + .label {
+            background: $darkColor;
+            border: 1px $darkColor solid;
+            color: #fff;
+          }
+        }
+
+        .label {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 20px;
+          padding: 2px 14px;
+          background: #fff;
+          border: 1px #BCBCBC solid;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

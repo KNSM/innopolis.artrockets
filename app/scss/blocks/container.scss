@@ -1,0 +1,14 @@
+.container {
+  max-width: 1578px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (max-width: $bpDesktop) {
+    max-width: 1228px;
+  }
+
+  @media (max-width: $bpMobile) {
+    padding: 0 20px;
+  }
+}

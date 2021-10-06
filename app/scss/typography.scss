@@ -1,0 +1,145 @@
+html, body {
+  background: $pageColor;
+  font-size: 18px;
+  font-family: $baseFont;
+  overflow-x: hidden;
+  position: relative;
+
+  @media (max-width: $bpDesktop) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $bpPhone) {
+    font-size: 14px;
+  }
+}
+
+main {
+  position: relative;
+  min-height: calc(100vh - 100px);
+
+  @media (max-width: 1440px) {
+    min-height: calc(100vh - 168px);
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: inherit;
+}
+
+h1, .h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.35;
+
+  @media (max-width: $bpDesktop) {
+    font-size: 50px;
+  }
+
+  @media (max-width: $bpMobile) {
+    font-size: 40px;
+  }
+
+  @media (max-width: $bpPhone) {
+    font-size: 32px;
+  }
+}
+
+h2, .h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media (max-width: $bpDesktop) {
+    font-size: 35px;
+  }
+
+  @media (max-width: $bpMobile) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $bpPhone) {
+    font-size: 27px;
+  }
+}
+
+h3, .h3 {
+}
+
+h4, .h4 {
+}
+
+h5, .h5 {
+  font-size: 24px;
+
+  @media (max-width: $bpDesktop) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $bpTablet) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $bpMobile) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $bpPhone) {
+    font-size: 14px;
+  }
+}
+
+h6, .h6 {
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: .5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: .2s;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+input, button, textarea, select {
+  outline: none;
+}
+
+p::selection,
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+em::selection,
+div::selection,
+a::selection,
+img::selection,
+ul::selection,
+li::selection,
+table::selection,
+br::selection,
+sup::selection,
+input::selection,
+b::selection,
+ins::selection,
+strong::selection{
+  background: rgba($primaryColor, .2);
+}
