@@ -109,10 +109,13 @@
     .menu-content {
       @media (max-width: $bpPhone) {
         display: none;
+        margin-top: 24px;
       }
     }
 
     .menu-mobile-title {
+      cursor: pointer;
+
       @media (min-width: $bpPhone + 1) {
         display: none;
       }
@@ -1099,6 +1102,8 @@
     }
 
     .menu-mobile-title {
+      cursor: pointer;
+
       @media (min-width: $bpPhone + 1) {
         display: none;
       }
@@ -1240,6 +1245,8 @@
     }
 
     .filter-mobile-title {
+      cursor: pointer;
+
       @media (min-width: $bpPhone + 1) {
         display: none;
       }

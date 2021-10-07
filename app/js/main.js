@@ -362,10 +362,10 @@ $(document).ready(function () {
 
         mobileFilter();
 
-        $(window).on('resize', function () {
-            mobileMenu();
-            mobileFilter();
-        });
+        // $(window).on('resize', function () {
+        //     mobileMenu();
+        //     mobileFilter();
+        // });
     });
 
     //media-block
@@ -379,13 +379,19 @@ $(document).ready(function () {
             menuButton = menuContent.find('.menu-mobile-button');
 
 
+
         function mobileMenu() {
             if ($(window).width() <= 480) {
                 menuTitle.find('.text').html(menuList.find('.list__item.-active .list__item-link').html());
 
                 menuTitle.click(function () {
-                    $(this).addClass('-active');
-                    menuContent.stop().slideDown();
+                    if (menuTitle.hasClass('-active')) {
+                        $(this).removeClass('-active');
+                        menuContent.stop().slideUp();
+                    } else {
+                        $(this).addClass('-active');
+                        menuContent.stop().slideDown();
+                    }
                 });
 
                 menuListItem.click(function () {
@@ -409,9 +415,9 @@ $(document).ready(function () {
 
         mobileMenu();
 
-        $(window).on('resize', function () {
-            mobileMenu();
-        });
+        // $(window).on('resize', function () {
+        //     mobileMenu();
+        // });
     });
 
     //header
