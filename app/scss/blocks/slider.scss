@@ -33,9 +33,13 @@
       }
 
       .item__title {
-        margin-bottom: 55px;
+        margin-bottom: 50px;
         max-width: 570px;
         min-height: 200px;
+
+        @media (max-width: $bpDesktop) {
+          margin-bottom: 58px;
+        }
 
         &:last-child {
           margin-bottom: 0;
@@ -45,6 +49,18 @@
           font-weight: 700;
           font-size: 60px;
           line-height: 1.35;
+        }
+      }
+
+      .list.list-dotted .list__item .text {
+        @media (max-width: $bpMobile) {
+          font-size: 12px;
+          line-height: 22px;
+        }
+      }
+      .list.list-dotted .list__item {
+        @media (max-width: $bpMobile) {
+          margin-bottom: 0;
         }
       }
 
@@ -77,17 +93,21 @@
 
       @media (max-width: $bpMobile) {
         padding: 40px 0 80px;
-
-        .item__title {
-          .text {
-            font-size: 32px;
-          }
-        }
       }
 
       @media (max-width: $bpPhone) {
-        padding: 250px 0 100px;
+        padding: 255px 0 100px;
         text-align: center;
+
+        .item__title {
+          .text {
+            font-size: 25px;
+            line-height: 32px;
+            max-width: 288px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
 
         &:before {
           background: linear-gradient(to top, #FFFFFF 37.78%, rgba(255, 255, 255, 0.94) 49.3%, rgba(255, 255, 255, 0.72) 74.34%, rgba(255, 255, 255, 0) 96.87%);
@@ -98,7 +118,8 @@
         }
 
         .item__title {
-          min-height: 100px;
+          min-height: auto;
+          margin-bottom: 16px;
         }
 
         .item__list {
@@ -115,7 +136,7 @@
 
     .slider__info {
       position: absolute;
-      bottom: 130px;
+      bottom: 120px;
       left: 50%;
       transform: translateX(-50%);
       width: 1578px;
@@ -199,7 +220,7 @@
           }
 
           .slider-arrow-prev {
-            margin-right: 32px;
+            margin-right: 17px;
             cursor: pointer;
 
             .icon {

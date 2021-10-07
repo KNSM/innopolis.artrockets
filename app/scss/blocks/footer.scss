@@ -85,6 +85,10 @@
     padding-right: 72px;
     padding-left: 44px;
 
+    @media (max-width: $bpMobile) {
+      padding-right: 0;
+    }
+
     .info-wrapper {
       display: flex;
       flex-wrap: wrap;

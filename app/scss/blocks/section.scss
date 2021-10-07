@@ -39,9 +39,9 @@
   }
 
   &.section-advantages {
-    padding: 70px 0 68px;
+    padding: 88px 0 60px;
 
-    @media (max-height: $bpDesktop) {
+    @media (max-width: $bpDesktop) {
       padding: 70px 0 54px;
     }
 
@@ -50,7 +50,7 @@
     }
 
     @media (max-width: $bpPhone) {
-      padding: 40px 0;
+      padding: 48px 0;
     }
   }
 
