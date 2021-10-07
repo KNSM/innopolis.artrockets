@@ -424,6 +424,10 @@
     &:hover {
       .item__arrow {
         transform: translateX(0);
+
+        @media (max-width: $bpPhone) {
+          transform: translateY(-100%);
+        }
       }
 
       .item__title {
