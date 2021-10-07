@@ -1,2 +1,4 @@
 /node_modules/
 /parts/
+yarn.lock
+package-lock.json
