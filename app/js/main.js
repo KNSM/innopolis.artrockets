@@ -311,16 +311,16 @@ $(document).ready(function () {
                 filterTitle.click(function () {
                     if ($(this).hasClass('-active')) {
                         $(this).removeClass('-active');
-                        filterContent.slideUp();
+                        filterContent.stop().slideUp();
                     } else {
                         $(this).addClass('-active');
-                        filterContent.slideDown();
+                        filterContent.stop().slideDown();
                     }
                 });
             } else {
                 if (filterTitle.hasClass('-active')) {
                     filterTitle.removeClass('-active');
-                    filterContent.slideDown();
+                    filterContent.stop().slideDown();
                 }
             }
         }
@@ -330,13 +330,12 @@ $(document).ready(function () {
                 menuTitle.find('.text').html(menuList.find('.list__item.-active .list__item-link').html());
 
                 menuTitle.click(function () {
-
                     if ($(this).hasClass('-active')) {
                         $(this).removeClass('-active');
-                        menuContent.slideUp();
+                        menuContent.stop().slideUp();
                     } else {
                         $(this).addClass('-active');
-                        menuContent.slideDown();
+                        menuContent.stop().slideDown();
                     }
                 });
 
@@ -349,12 +348,12 @@ $(document).ready(function () {
                 menuButton.click(function () {
                     menuTitle.find('.text').html(menuList.find('.list__item.-active .list__item-link').html());
                     menuTitle.removeClass('-active');
-                    menuContent.slideUp();
+                    menuContent.stop().slideUp();
                 });
             } else {
                 if (menuTitle.hasClass('-active')) {
                     menuTitle.removeClass('-active');
-                    menuContent.slideDown();
+                    menuContent.stop().slideDown();
                 }
             }
         }
@@ -386,7 +385,7 @@ $(document).ready(function () {
 
                 menuTitle.click(function () {
                     $(this).addClass('-active');
-                    menuContent.slideDown();
+                    menuContent.stop().slideDown();
                 });
 
                 menuListItem.click(function () {
@@ -398,12 +397,12 @@ $(document).ready(function () {
                 menuButton.click(function () {
                     menuTitle.find('.text').html(menuList.find('.list__item.-active .list__item-link').html());
                     menuTitle.removeClass('-active');
-                    menuContent.slideUp();
+                    menuContent.stop().slideUp();
                 });
             } else {
                 if (menuTitle.hasClass('-active')) {
                     menuTitle.removeClass('-active');
-                    menuContent.slideDown();
+                    menuContent.stop().slideDown();
                 }
             }
         }
