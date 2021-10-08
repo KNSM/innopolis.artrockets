@@ -4,7 +4,7 @@
   &.slider-main {
 
     .slider__item {
-      padding: 170px 0 377px;
+      padding: 10vh 0 30vh;
       background-position: right center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -33,12 +33,12 @@
       }
 
       .item__title {
-        margin-bottom: 50px;
+        margin-bottom: 5.4vh;
         max-width: 570px;
         min-height: 200px;
 
         @media (max-width: $bpDesktop) {
-          margin-bottom: 58px;
+          margin-bottom: 4vh;
         }
 
         &:last-child {
@@ -65,7 +65,7 @@
       }
 
       @media (max-width: $bpDesktop) {
-        padding: 120px 0 210px;
+        padding: 10vh 0 22vh;
 
         .item__title {
 
@@ -96,7 +96,7 @@
       }
 
       @media (max-width: $bpPhone) {
-        padding: 255px 0 100px;
+        padding: 39vh 0 100px;
         text-align: center;
 
         .item__title {
@@ -136,7 +136,7 @@
 
     .slider__info {
       position: absolute;
-      bottom: 120px;
+      bottom: 12vh;
       left: 50%;
       transform: translateX(-50%);
       width: 1578px;
@@ -145,7 +145,7 @@
 
       @media (max-width: $bpDesktop) {
         width: 1228px;
-        bottom: 90px;
+        bottom: 6vh;
       }
 
       @media (max-width: $bpTablet) {
