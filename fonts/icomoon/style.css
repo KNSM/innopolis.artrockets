@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?yft6yk');
+  src:  url('fonts/icomoon.eot?yft6yk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yft6yk') format('truetype'),
+    url('fonts/icomoon.woff?yft6yk') format('woff'),
+    url('fonts/icomoon.svg?yft6yk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-quotes:before {
+  content: "\e900";
+}
+.icon-icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-icon-arrow-right-long:before {
+  content: "\e903";
+}
+.icon-icon-atom:before {
+  content: "\e904";
+}
+.icon-icon-book:before {
+  content: "\e905";
+}
+.icon-icon-chat:before {
+  content: "\e906";
+}
+.icon-icon-circle-car:before {
+  content: "\e907";
+}
+.icon-icon-graphic-guard:before {
+  content: "\e908";
+}
+.icon-icon-heart:before {
+  content: "\e909";
+}
+.icon-icon-medical:before {
+  content: "\e90a";
+}
+.icon-icon-play-circle:before {
+  content: "\e90b";
+}
+.icon-icon-tree:before {
+  content: "\e90c";
+}
+.icon-icon-quatro-form:before {
+  content: "\e90d";
+}
+.icon-icon-single-form:before {
+  content: "\e90e";
+}
+.icon-icon-arrow-link:before {
+  content: "\e90f";
+}
+.icon-icon-arrow-down:before {
+  content: "\e910";
+}
+.icon-icon-check:before {
+  content: "\e911";
+}
+.icon-icon-filter:before {
+  content: "\e912";
+}
+.icon-icon-fb:before {
+  content: "\e913";
+}
+.icon-icon-instagram:before {
+  content: "\e914";
+}
+.icon-icon-twitter:before {
+  content: "\e915";
+}
+.icon-icon-vk:before {
+  content: "\e916";
+}
+.icon-icon-youtube:before {
+  content: "\e917";
+}
+.icon-logo:before {
+  content: "\e918";
+}
